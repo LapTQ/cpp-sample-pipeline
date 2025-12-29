@@ -61,3 +61,5 @@ Build:
 cmake . -D OpenCV_DIR=/Users/user/Downloads/cpp-sample-pipeline/libs/opencv/latest/install/lib/cmake/opencv4
 make
 ```
+
+Thực ra, File 2 mới là file viết chuẩn (vì ta không nên hard-code đường dẫn tuyệt đối vào trong file code CMakeLists.txt, sang máy người khác sẽ bị lỗi).
