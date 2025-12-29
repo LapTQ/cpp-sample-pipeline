@@ -1,0 +1,43 @@
+---
+Language:        Cpp
+# Dựa trên chuẩn Google (Chuẩn này rất clean, xử lý tốt các template C++)
+BasedOnStyle:  Google
+
+# --- TÙY CHỈNH LẠI CHO DỄ ĐỌC ---
+
+# Độ rộng thụt đầu dòng là 4 spaces (Google mặc định là 2, nhưng 4 dễ nhìn hơn giống Python)
+IndentWidth:     4
+
+# Số ký tự tối đa trên 1 dòng. 
+# 80 là chuẩn cũ, 120 phù hợp với màn hình rộng hiện nay, tránh xuống dòng vô lý.
+ColumnLimit:     120
+
+# Tự động sắp xếp các file #include theo thứ tự bảng chữ cái
+SortIncludes:    true
+
+# Căn lề con trỏ: Chọn Left (int* p) thay vì Right (int *p)
+# Phong cách này phổ biến trong C++ hiện đại hơn
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+# Không cho phép gộp các khối ngắn thành 1 dòng (giúp debug dễ hơn)
+# Ví dụ: if (a) { return; } -> Sẽ bắt buộc xuống dòng
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# Căn thẳng hàng các dòng khai báo liên tiếp (tùy chọn, nhìn rất gọn)
+# int    a = 1;
+# double b = 2.0;
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+
+# Tắt tính năng gộp nhiều tham số gọi hàm vào cùng 1 dòng
+BinPackArguments: false
+
+# Tắt tính năng gộp nhiều tham số khai báo hàm (trong .h/.cpp) vào cùng 1 dòng
+BinPackParameters: false
+
+# xuống dòng "triệt để" hơn
+AlignAfterOpenBracket: AlwaysBreak
