@@ -1,0 +1,3 @@
+Always have a header guard in a header file. Use a complex name for your header guard (e.g., PROJECT_PATH_FILE_H)
+
+defineing global variables inside a namespace rather than in the global namespace.
