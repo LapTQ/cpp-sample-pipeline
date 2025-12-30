@@ -17,7 +17,7 @@ link_directories(${ONNX_ROOT}/lib)
 
 # --- 1. SETUP YOLO MODULE ---
 # Định nghĩa đường dẫn tới source code YOLO bạn vừa tải
-set(YOLO_SOURCE_DIR /Users/user/Downloads/cpp-sample-pipeline/libs/yolov8onnx/latest/source)
+set(YOLO_SOURCE_DIR /Users/user/Downloads/cpp-sample-pipeline/libs/yolov8onnx/8.3.243/source)
 
 # Tạo một thư viện tĩnh (Static Library) tên là "yolo_lib"
 # CHÚ Ý: Chỉ lấy inference.cpp, TUYỆT ĐỐI KHÔNG lấy main.cpp
