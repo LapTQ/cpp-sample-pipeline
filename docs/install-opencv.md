@@ -128,7 +128,7 @@ Then run your app:
 
 ```
 
-* **Why is `LD_LIBRARY_PATH` necessary if I already compiled with `-L`?** The reason lies in the distinction between **Compile Time** and **Runtime**. 
+**Why is `LD_LIBRARY_PATH` necessary if I already compiled with `-L`?** The reason lies in the distinction between **Compile Time** and **Runtime**. 
   * The `-L` flag is strictly for the linker during the build process; it ***verifies that the library exists*** and ***resolves symbols*** so the executable can be created. However, the resulting executable typically stores only the library's *name* (e.g., `libopencv_core.dylib`), not its absolute path. 
   * When you run the application, the OS Dynamic Loader searches standard system directories (like `/usr/lib`) by default and is unaware of your custom `libs` folder. `LD_LIBRARY_PATH` (or `DYLD_LIBRARY_PATH` on macOS) acts as a runtime map, explicitly telling the OS where to find these non-standard shared libraries.
 
