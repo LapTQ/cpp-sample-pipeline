@@ -2,7 +2,13 @@ Clangd is often significantly faster and more accurate than the default Microsof
 
 Here is the complete setup guide to replace the Microsoft IntelliSense with clangd while keeping the Microsoft Debugger.
 
-### Step 1: Install the Extension (VS Code)
+### Step 1: Install the clangd
+
+1. Install extension in VS Code
+2. Install clangd in your system
+    ```bash
+    apt-get install clangd
+    ```
 
 ### Step 2: Disable Microsoft IntelliSense
 
