@@ -56,5 +56,11 @@ By default, clangd looks for `compile_commands.json` in the **root** of your wor
 ```bash
 # Run this in your project root
 ln -s build/compile_commands.json .
-
 ```
+
+
+### Clang format
+
+1. Tạo file `.clang-format` tại thư mục gốc project.
+2. Trong VS Code Settings, tìm `Editor: Format On Save` và bật lên.
+3. Đảm bảo `Editor: Default Formatter` cho C++ được chọn là `clangd`.
